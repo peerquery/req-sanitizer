@@ -46,7 +46,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Mount first before any other req function or router
-app.use(require('req-sanitizer')); // this line follows bodyParser() instantiations
+app.use(require('req-sanitizer')()); // this line follows bodyParser() instantiations
 
 ```
 
