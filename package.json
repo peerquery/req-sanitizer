@@ -1,6 +1,6 @@
 {
   "name": "req-sanitizer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "simple node middleware to sanitize req.body object",
   "main": "./lib/index.js",
   "directories": {
