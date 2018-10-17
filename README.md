@@ -17,14 +17,15 @@ That is a valid string. Lets say that is what someone entered into the name inpu
 
 When you rendered this user's info on your site, the above script would run! At the same time, let say you tried to individually sanitize all fields with a custom `sanitize()` module:
 
-```
-    var messageData = {
-        name : sanitize(req.body.name),
-        email : sanitize(req.body.email),
-        message : sanitize(req.body.message),
-        time : sanitize(req.body.time)
-    };
-    messageController.addMessage(req,res,messageData);
+```javascript
+var messageData = {
+    name : sanitize(req.body.name),
+    email : sanitize(req.body.email),
+    message : sanitize(req.body.message),
+    time : sanitize(req.body.time)
+};
+
+messageController.addMessage(req,res,messageData);
 ```
 
 This would be too much bloat, without even mentioning that you would have to repeat this configuration for every single controller and API! What happens when you miss one of those fields? You are a toast. Save yourself hassle and automate this entire hassle with this module.
