@@ -1,6 +1,6 @@
 {
   "name": "xss-sanitizer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "simple node middleware to sanitize req.body object",
   "main": "./lib/index.js",
   "directories": {
